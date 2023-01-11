@@ -4,9 +4,15 @@
   <groupId>com.mano</groupId>
   <artifactId>Maven-webapp</artifactId>
   <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0-RELEASE</version>
   <name>Maven-webapp Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  
+  <properties>
+	<sonar.host.url>http://43.205.236.71:9000/</sonar.host.url>
+	<sonar.login>squ_b644875c8481b6e166d48705572a398b353cb193</sonar.login>
+  </properties>
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
