@@ -1,7 +1,7 @@
 pipeline {
 	agent any
 	tools {
-		maven 'Maven_3.8.7'
+		maven 'Maven_3.9.2'
 	}
 	
 	stages {
@@ -19,7 +19,7 @@ pipeline {
 		stage('Deploy') {
 			steps {
 				sshagent(['ssh-server-agent']) {
-					sh 'scp -o StrictHostKeyChecking=no target/Maven-webapp.war ec2-user@43.205.99.217:/home/ec2-user/apache-tomcat-9.0.70/webapps'
+					sh 'scp -o StrictHostKeyChecking=no target/Maven-webapp.war ec2-user@13.233.99.192:/home/ec2-user/apache-tomcat-11.0.0-M6/webapps'
 				}
 			}
 		}
